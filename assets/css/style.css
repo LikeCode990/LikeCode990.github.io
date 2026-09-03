@@ -392,3 +392,213 @@ tbody tr:hover {
     line-height: 1.75rem;
     color: #4b5563;
 }
+
+/* Why IT */
+#why-it {
+    max-width: 1120px;
+}
+
+.why-hero {
+    align-items: end;
+    background: #102a43;
+    border-radius: 1rem;
+    color: #f8fafc;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 3rem;
+    overflow: hidden;
+    padding: clamp(2rem, 6vw, 5rem);
+    position: relative;
+}
+
+.why-hero::after {
+    background: #e85d3f;
+    content: '';
+    height: 180px;
+    position: absolute;
+    right: -50px;
+    top: -55px;
+    transform: rotate(28deg);
+    width: 130px;
+}
+
+.why-hero-copy {
+    max-width: 650px;
+    position: relative;
+    z-index: 1;
+}
+
+.why-hero .eyebrow,
+.why-next .eyebrow {
+    color: #ff987f;
+}
+
+.why-hero h1 {
+    font-size: clamp(3.25rem, 9vw, 6.5rem);
+    letter-spacing: -0.06em;
+    line-height: 0.9;
+    margin: 0 0 1.75rem;
+}
+
+.why-intro {
+    color: #d8e4ef;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.7;
+    margin: 0 0 2rem;
+    max-width: 600px;
+}
+
+.why-hero .btn {
+    background: #f8fafc;
+    color: #102a43;
+}
+
+.why-hero .btn:hover {
+    background: #ff987f;
+    color: #102a43;
+}
+
+.why-hero-mark {
+    align-items: center;
+    border-left: 1px solid rgba(216, 228, 239, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 230px;
+    position: relative;
+    z-index: 1;
+}
+
+.mark-bracket {
+    color: #ff987f;
+    font-family: 'Courier New', monospace;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.mark-label {
+    color: #9fb3c8;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.why-reasons {
+    padding: 5rem 0 4rem;
+}
+
+.section-heading {
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 0.25rem;
+}
+
+.section-heading h2,
+.why-next h2 {
+    color: #102a43;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.reason-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.reason-card {
+    background: #ffffff;
+    border-top: 4px solid #e85d3f;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+    padding: 1.75rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.reason-card:hover {
+    box-shadow: 0 18px 36px rgba(15, 23, 42, 0.14);
+    transform: translateY(-5px);
+}
+
+.reason-number {
+    color: #e85d3f;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.reason-card h3 {
+    color: #102a43;
+    font-size: 1.3rem;
+    margin: 2.5rem 0 0.75rem;
+}
+
+.reason-card p,
+.why-next > p {
+    color: #52677d;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.why-next {
+    align-items: center;
+    background: #dff2f0;
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) 1fr;
+    gap: 3rem;
+    padding: 2.5rem 3rem;
+}
+
+.why-next .eyebrow {
+    color: #15807b;
+    margin-bottom: 0.65rem;
+}
+
+@media (max-width: 700px) {
+    .why-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .why-hero-mark {
+        border-left: 0;
+        border-top: 1px solid rgba(216, 228, 239, 0.3);
+        min-height: 150px;
+        padding-top: 1.5rem;
+    }
+
+    .why-reasons {
+        padding: 3.5rem 0;
+    }
+
+    .section-heading,
+    .why-next {
+        align-items: start;
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 1rem;
+    }
+
+    .reason-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reason-card h3 {
+        margin-top: 1.5rem;
+    }
+
+    .why-next {
+        padding: 2rem;
+    }
+}
