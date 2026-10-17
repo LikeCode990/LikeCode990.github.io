@@ -1,4 +1,4 @@
-const setGrades = () => {
+function setGrades() {
     const gradeList = {
         'programming-basics-grade': 0 ,
         'computer-science-grade': 0,
