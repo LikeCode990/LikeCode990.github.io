@@ -39,6 +39,9 @@ function setGrades() {
     progressBarGrade.classList.toggle('is-done', progressGrade >= 100);
     progressBarGrade.classList.toggle('is-half', progressGrade >= 50 && progressGrade < 100);
 
+    document.getElementById('progressLabel').textContent = `${earnedEC} van 60 EC behaald`;
+    document.getElementById('progressbar').setAttribute('aria-valuenow', earnedEC);
+
 }
 
 setGrades();
