@@ -23,18 +23,21 @@ function setGrades() {
         }
     }
 
-    // sum all grades
-    const totalGrade = Object.values(gradeList).reduce((sum, grade) => sum + grade, 0);
-    const progressGrade = ((totalGrade / 60) * 100).toFixed(2);
-    document.getElementById('progressbarGrade').style.width = `${progressGrade}%`;
-
-    if (progressGrade >= 100) {
-        document.getElementById('progressbarGrade').style.backgroundColor = 'green';
-    }else if (progressGrade >= 50) {
-        document.getElementById('progressbarGrade').style.backgroundColor = 'orange';
-    }else {
-        document.getElementById('progressbarGrade').style.backgroundColor = 'red';
+    let earnedEC = 0;
+    for (let id in gradeList) {
+        if (gradeList[id] >= 5.5) {
+            earnedEC = earnedEC + 5;
+        }
     }
+
+    let progressGrade = (earnedEC / 60) * 100;
+    if (progressGrade > 100) {
+        progressGrade = 100;
+    }
+    const progressBarGrade = document.getElementById('progressbarGrade');
+    progressBarGrade.style.width = `${progressGrade}%`;
+    progressBarGrade.classList.toggle('is-done', progressGrade >= 100);
+    progressBarGrade.classList.toggle('is-half', progressGrade >= 50 && progressGrade < 100);
 
 }
 

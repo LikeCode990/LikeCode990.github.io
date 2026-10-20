@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Not Nongmisap</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/nav.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a class="" href="index.html">Home</a></li>
-            <li><a class="active" href="dashboard.html">Dashboard</a></li>
-            <li><a class="" href="about.html">About</a></li>
-            <li><a class="" href="profile.html">Profile</a></li>
-            <li><a class="" href="why-it.html">Why IT?</a></li>
-            <li><a class="" href="blog.html">Blog</a></li>
+    <nav aria-label="Hoofdnavigatie">
+        <a class="nav-brand" href="index.html">
+            <span class="nav-brand-mark" aria-hidden="true">N</span>
+            <span class="nav-brand-copy"><strong>NOT</strong><small>PORTFOLIO</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu openen">
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" aria-current="page" href="dashboard.html">Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="why-it.html">Why IT?</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
 
@@ -43,81 +53,81 @@
                     <tr>
                         <td rowspan="3">1</td>
                         <td>Programming basics</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="programming-basics-grade" data-grade=""></th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="programming-basics-grade"></td>
                     </tr>
                     <tr>
                         <td>Computer science basics</td>
-                        <th>5</th>
-                        <th> Written knowledge test </th>
-                        <th id="computer-science-grade" data-grade=""></th>
+                        <td>5</td>
+                        <td> Written knowledge test </td>
+                        <td id="computer-science-grade"></td>
                     </tr>
                     <tr>
                         <td>Data science basics</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="data-science-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="data-science-grade"></td>
                     </tr>
                     <!-- Quarter 2 -->
                     <tr>
                         <td rowspan="3">2</td>
                         <td>Software Engineering Basics</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="software-engineering-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="software-engineering-grade"></td>
                     </tr>
                     <tr>
                         <td>Object Oriented Programming</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="object-oriented-programming-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="object-oriented-programming-grade"></td>
                     </tr>
                     <tr>
                         <td>Programme- & Career orientation</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="programme-career-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="programme-career-grade"></td>
                     </tr>
                     <!-- Quarter 3 -->
                     <tr>
                         <td rowspan="3">3</td>
                         <td>Agile and team management</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="agile-team-management-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="agile-team-management-grade"></td>
                     </tr>
                     <tr>
                         <td>Project: Applied Client Solutions</td>
-                        <th>5</th>
-                        <th> Portfolio </th>
-                        <th id="applied-client-solutions-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Portfolio </td>
+                        <td id="applied-client-solutions-grade"></td>
                     </tr>
                     <tr>
                         <td>Project: Foundations</td>
-                        <th>5</th>
-                        <th> Portfolio </th>
-                        <th id="foundations-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Portfolio </td>
+                        <td id="foundations-grade"></td>
                     </tr>
                     <!-- Quarter 4 -->
                     <tr>
                         <td rowspan="3">4</td>
                         <td>Requirements Modeling</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="requirements-modeling-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="requirements-modeling-grade"></td>
                     </tr>
                     <tr>
                         <td>Foundation of Data</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="foundation-of-data-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="foundation-of-data-grade"></td>
                     </tr>
                     <tr>
                         <td>Web Application Development</td>
-                        <th>5</th>
-                        <th> Assignment (individual) </th>
-                        <th id="web-application-development-grade" value=""> - </th>
+                        <td>5</td>
+                        <td> Assignment (individual) </td>
+                        <td id="web-application-development-grade"></td>
                     </tr>
                 </tbody>
             </table>
@@ -127,6 +137,6 @@
         </div>
     </section>
 
-</body>
 <script src="assets/js/main.js"></script>
+</body>
 </html>

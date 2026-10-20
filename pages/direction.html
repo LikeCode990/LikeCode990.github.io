@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direction | Not Nongmisap</title>
+    <title>Mijn richting in de IT | Not Nongmisap</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/nav.js" defer></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a class="" href="../index.html">Home</a></li>
-            <li><a class="" href="../dashboard.html">Dashboard</a></li>
-            <li><a class="" href="../about.html">About</a></li>
-            <li><a class="" href="../profile.html">Profile</a></li>
-            <li><a class="" href="../why-it.html">Why IT?</a></li>
-            <li><a class="" href="../blog.html">Blog</a></li>
+    <nav aria-label="Hoofdnavigatie">
+        <a class="nav-brand" href="../index.html">
+            <span class="nav-brand-mark" aria-hidden="true">N</span>
+            <span class="nav-brand-copy"><strong>NOT</strong><small>PORTFOLIO</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu openen">
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../dashboard.html">Dashboard</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../profile.html">Profile</a></li>
+            <li><a href="../why-it.html">Why IT?</a></li>
+            <li><a href="../blog.html">Blog</a></li>
         </ul>
     </nav>
 
-    <section id="direction" class="container">
-        <a href="../blog.html" class="btn-secondary">Back to Blog<span aria-hidden="true">&#8592;</span></a>
-        <h1>Direction</h1>
+    <main id="direction" class="container">
+        <a href="../blog.html" class="btn-secondary">Terug naar blog<span aria-hidden="true">&#8592;</span></a>
+        <h1>Mijn richting in de IT</h1>
+
         <div class="content">
-            <p>
-                This is the direction page. Here you can find information about the direction of the project.
+            <p class="lead">
+                Na het brede eerste jaar kies ik in jaar 2 voor de Software Engineering.
             </p>
+
+            <h2>Software Engineering</h2>
+            <p>
+                Software Engineering omvat het ontwerpen, bouwen, testen en onderhouden van betrouwbare software, van klantwensen tot architectuur en code reviews.
+            </p>
+            <ul>
+                <li><strong>Taken:</strong> eisen vertalen naar apps, API’s en databases; testen en deployen.</li>
+                <li><strong>Vaardigheden:</strong> objectgeoriënteerd programmeren, testen, Git en communicatie.</li>
+                <li><strong>Banen:</strong> software-, full-stack- of backenddeveloper; softwarearchitect.</li>
+            </ul>
+
+            <h2>Mijn voorkeur: Software Engineering</h2>
+            <p>
+                Mijn voorkeur is <strong>Software Engineering</strong>, om drie redenen:
+            </p>
+            <ol>
+                <li><strong>Aansluiting:</strong> mijn mbo-ervaring met webapps is een basis voor grotere, beter geteste systemen.</li>
+                <li><strong>Bouwen:</strong> ik krijg energie van ideeën omzetten in bruikbare apps, zoals deze portfolio.</li>
+                <li><strong>AI:</strong> ik wil modellen integreren in apps, API’s en databases.</li>
+            </ol>
+            <p>
+                Data Science blijft interessant, maar ik geef de voorkeur aan apps bouwen. In kwartaal 4 toets ik die keuze in Foundation of Data en met mijn Python-analyse (<a href="goals.html#doel-5">doel 5</a>).
+            </p>
+
+            <h2>Wat ik nu al doe</h2>
+            <ul>
+                <li>Ik onderhoud deze portfolio en publiceer projecten op GitHub.</li>
+                <li>Ik leer TypeScript voor backend-API’s (<a href="goals.html#doel-2">doel 2</a>).</li>
+                <li>Ik test lokale AI-modellen in software.</li>
+            </ul>
         </div>
-    </section>
+    </main>
 </body>
 </html>

@@ -1,44 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile | Not Nongmisap</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/nav.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a class="" href="index.html">Home</a></li>
-            <li><a class="" href="dashboard.html">Dashboard</a></li>
-            <li><a class="" href="about.html">About</a></li>
-            <li><a class="active" href="profile.html">Profile</a></li>
-            <li><a class="" href="why-it.html">Why IT?</a></li>
-            <li><a class="" href="blog.html">Blog</a></li>
+    <nav aria-label="Hoofdnavigatie">
+        <a class="nav-brand" href="index.html">
+            <span class="nav-brand-mark" aria-hidden="true">N</span>
+            <span class="nav-brand-copy"><strong>NOT</strong><small>PORTFOLIO</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Menu openen">
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" aria-current="page" href="profile.html">Profile</a></li>
+            <li><a href="why-it.html">Why IT?</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
 
     <main id="profile" class="container">
-        
-        <section class="profile-hero">
+        <h1>Profile</h1>
+        <a class="profile-experience-link" href="#experience">Bekijk mijn projectervaring <span
+                aria-hidden="true">↓</span></a>
+
+        <section id="experience" class="profile-hero" tabindex="-1">
             <div class="profile-experience">
-                <h1 id="profile-title">Experience</h1>
-                <div class="">
-                    Mijn technische kennis omvat onder andere HTML, CSS, JavaScript en React aan de frontend.
-                    Daarnaast
-                    heb ik ervaring met JavaScript, PHP en Python. TypeScript en Python beheers ik momenteel op
-                    beginnersniveau.
-                </div>
+                <h2>Projectervaring</h2>
+                <p class="profile-intro">
+                    Tijdens MBO 4 Software Developer aan Scalda bouwde ik webapplicaties voor schoolprojecten. Ik
+                    vertaalde opdrachten naar werkende software.
+                </p>
                 <div class="home-stats">
                     <div class="stat">
+                        <strong>Scalda MBO 4</strong>
                         <span>Software Developer</span>
-                        <b>Scalda MBO 4</b>
                     </div>
                     <div class="stat">
+                        <strong>Reynaert College</strong>
                         <span>VMBO-K</span>
-                        <b>Reynaert College</b>
                     </div>
 
                 </div>
@@ -47,7 +59,7 @@
 
         <section class="profile-hero">
             <div class="profile-hero-copy">
-                <h1 id="profile-title">Skills</h1>
+                <h2>Skills</h2>
                 <div class="profile-intro">
                     <p>
                         Mijn technische kennis omvat onder andere HTML, CSS, JavaScript en React aan de frontend.
@@ -63,41 +75,20 @@
             </div>
         </section>
 
-        <section class="profile-hero">
-            <div class="profile-hero-copy">
-                <h1 id="profile-title">SWOT</h1>
-                <div class="profile-intro">
-                    <div class="swot">
-                        <div class="strength">
-                            <h3>Strengths</h3>
-                            <ul>
-                                <li>Technische vaardigheden</li>
-                                <li>Probleemoplossend vermogen</li>
-                            </ul>
-                        </div>
-                        <div class="weakness">
-                            <h3>Weaknesses</h3>
-                            <ul>
-                                <li>Beperkte ervaring in bepaalde technologieën</li>
-                                <li>Te weinig ervaring met projectbeheer</li>
-                            </ul>
-                        </div>
-                        <div class="opportunity">
-                            <h3>Opportunities</h3>
-                            <ul>
-                                <li>Nieuwe technologieën leren</li>
-                                <li>Deelnemen aan workshops en trainingen</li>
-                            </ul>
-                        </div>
-                        <div class="threat">
-                            <h3>Threats</h3>
-                            <ul>
-                                <li>Snel veranderende technologieën</li>
-                                <li>Intensieve concurrentie in de branche</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <section class="profile-social" aria-labelledby="social-heading">
+            <h2 id="social-heading">Find me online</h2>
+            <div class="profile-social-links">
+                <a class="profile-social-link" href="https://github.com/LikeCode990" target="_blank"
+                    rel="noopener noreferrer">
+                    <strong>GitHub</strong>
+                    <span>Bekijk mijn projecten <span aria-hidden="true">↗</span></span>
+                </a>
+
+                <a class="profile-social-link" href="https://linkedin.com/in/nnongmisap" target="_blank"
+                rel="noopener noreferrer">
+                    <strong>LinkedIn</strong>
+                    <span>Voeg hier je profiel-link toe</span>
+                </a>
             </div>
         </section>
     </main>

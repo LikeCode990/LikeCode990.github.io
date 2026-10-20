@@ -1,31 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goals | Not Nongmisap</title>
+    <title>Mijn leerdoelen | Not Nongmisap</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/nav.js" defer></script>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a class="" href="../index.html">Home</a></li>
-            <li><a class="" href="../dashboard.html">Dashboard</a></li>
-            <li><a class="" href="../about.html">About</a></li>
-            <li><a class="" href="../profile.html">Profile</a></li>
-            <li><a class="" href="../why-it.html">Why IT?</a></li>
-            <li><a class="" href="../blog.html">Blog</a></li>
+    <nav aria-label="Hoofdnavigatie">
+        <a class="nav-brand" href="../index.html">
+            <span class="nav-brand-mark" aria-hidden="true">N</span>
+            <span class="nav-brand-copy"><strong>NOT</strong><small>PORTFOLIO</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+            aria-label="Menu openen">
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../dashboard.html">Dashboard</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../profile.html">Profile</a></li>
+            <li><a href="../why-it.html">Why IT?</a></li>
+            <li><a href="../blog.html">Blog</a></li>
         </ul>
     </nav>
 
-    <section id="goals" class="container">
-        <a href="../blog.html" class="btn-secondary">Back to Blog<span aria-hidden="true">&#8592;</span></a>
-        <h1>Goals</h1>
+    <main id="goals" class="container">
+        <a href="../blog.html" class="btn-secondary">Terug naar blog<span aria-hidden="true">&#8592;</span></a>
+        <h1>Mijn leerdoelen</h1>
+
         <div class="content">
+            <p class="lead">
+                Met mijn basis in software development wil ik groeien tijdens jaar 1 HBO-ICT bij HZ. Hieronder staan
+                mijn doelen en SWOT.
+            </p>
+
+            <h2>Professionele doelen voor jaar 1</h2>
+            <p>Ik heb mijn doelen SMART gemaakt: elk doel heeft een meetbaar resultaat en een deadline.</p>
+
+            <ol class="goal-list">
+                <li id="doel-1">
+                    <h3>Doel 1 &mdash; Alle 60 EC van jaar 1 halen</h3>
+                    <p>
+                        In 2026&ndash;2027 haal ik alle twaalf vakken (60 EC), liefst in één keer. Elk kwartaal werk ik
+                        mijn <a href="../dashboard.html">Dashboard</a> bij.
+                    </p>
+                </li>
+                <li id="doel-2">
+                    <h3>Doel 2 &mdash; TypeScript van beginner naar zelfstandig</h3>
+                    <p>
+                        Vóór het einde van kwartaal 2 ga ik een TypeScript REST API bouwen om mijn projecten
+                        overzichtelijk bij te houden. Ik zet dit project op GitHub (LikeCode990).
+                    </p>
+                </li>
+                <li id="doel-3">
+                    <h3>Doel 3 &mdash; Grotere systemen ontwerpen en testen</h3>
+                    <p>
+                        Vanaf kwartaal 2 maak ik voor elke individuele opdracht een klassendiagram en test ik de
+                        belangrijkste logica.
+                    </p>
+                </li>
+                <li id="doel-4">
+                    <h3>Doel 4 &mdash; Ervaring met samenwerken en projectbeheer</h3>
+                    <p>
+                        In kwartaal 3 leid ik minstens één sprint als Scrum Master in een HZ-project voor een echte
+                        opdrachtgever. Daarna vraag ik feedback en noteer ik één verbeterpunt.
+                    </p>
+                </li>
+                <li id="doel-5">
+                    <h3>Doel 5 &mdash; Een onderbouwde keuze voor mijn richting</h3>
+                    <p>
+                        Vóór kwartaal 4 vergelijk ik beide tracks via de vakken en gesprekken met mijn begeleider en een
+                        tweedejaarsstudent. Begin jaar 2 kies ik; mijn voorkeur is <a href="direction.html">Software
+                            Engineering</a>.
+                    </p>
+                </li>
+            </ol>
+
+            <h2>Studiesucces: hoe ik op schema blijf</h2>
+            <ul>
+                <li><strong>Plannen:</strong> deadlines, toetsen en studieblokken noteer ik elk kwartaal.</li>
+                <li><strong>Meten:</strong> ik volg mijn EC in het <a href="../dashboard.html">Dashboard</a> en plan bij
+                    achterstand direct een herkansing.</li>
+                <li><strong>Feedback:</strong> ik leg tussenversies voor en verwerk verbeterpunten vóór de
+                    eindbeoordeling.</li>
+                <li><strong>Reistijd:</strong> ik plan mijn reis tussen Graauw en Middelburg mee.</li>
+            </ul>
+
+            <h2>SWOT-analyse</h2>
+            <div class="swot">
+                <div class="strength">
+                    <h3>Strengths</h3>
+                    <ul>
+                        <li>Basis in software development uit MBO 4 → <a href="#doel-3">doel 3</a></li>
+                        <li>Ervaring met webtechnologie → <a href="#doel-2">doel 2</a></li>
+                        <li>Zelf leren en problemen oplossen → <a href="#doel-2">doel 2</a></li>
+                    </ul>
+                </div>
+                <div class="weakness">
+                    <h3>Weaknesses</h3>
+                    <ul>
+                        <li>TypeScript en Python zijn nieuw → <a href="#doel-2">doel 2</a></li>
+                        <li>Weinig ervaring met systeemontwerp en testen → <a href="#doel-3">doel 3</a></li>
+                        <li>Weinig projectbeheerervaring → <a href="#doel-4">doel 4</a></li>
+                    </ul>
+                </div>
+                <div class="opportunity">
+                    <h3>Opportunities</h3>
+                    <ul>
+                        <li>HZ-projecten voor echte opdrachtgevers → <a href="#doel-4">doel 4</a></li>
+                        <li>Groei van AI en data → <a href="#doel-2">doel 2</a> en <a href="#doel-5">doel 5</a></li>
+                        <li>Twee tracks om uit te kiezen → <a href="#doel-5">doel 5</a></li>
+                    </ul>
+                </div>
+                <div class="threat">
+                    <h3>Threats</h3>
+                    <ul>
+                        <li>Snel veranderende technologie → <a href="#doel-2">doel 2</a></li>
+                        <li>EC-achterstand door uitgestelde herkansingen → <a href="#doel-1">doel 1</a></li>
+                        <li>Lange reistijd tussen Graauw en Middelburg → <a href="#doel-1">doel 1</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Conclusie</h2>
             <p>
-                This is the goals page. Here you can find information about the goals of the project.
+                Mijn programmeerervaring is een kracht. Doelen <a href="#doel-2">2</a>, <a href="#doel-3">3</a> en <a
+                    href="#doel-4">4</a> pakken mijn groeipunten aan. Doel <a href="#doel-1">1</a> helpt
+                studievertraging voorkomen; doel <a href="#doel-5">5</a> onderbouwt mijn trackkeuze.
             </p>
         </div>
-    </section>
+    </main>
 </body>
+
 </html>

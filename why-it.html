@@ -6,33 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why IT? | Not Nongmisap</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/nav.js" defer></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a class="" href="index.html">Home</a></li>
-            <li><a class="" href="dashboard.html">Dashboard</a></li>
-            <li><a class="" href="about.html">About</a></li>
-            <li><a class="" href="profile.html">Profile</a></li>
-            <li><a class="active" href="why-it.html">Why IT?</a></li>
-            <li><a class="" href="blog.html">Blog</a></li>
+    <nav aria-label="Hoofdnavigatie">
+        <a class="nav-brand" href="index.html">
+            <span class="nav-brand-mark" aria-hidden="true">N</span>
+            <span class="nav-brand-copy"><strong>NOT</strong><small>PORTFOLIO</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu openen">
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a class="active" aria-current="page" href="why-it.html">Why IT?</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
 
     <main class="why-it">
         <header class="hero">
             <div class="container">
-                <span class="eyebrow">Mijn verhaal · HBO-ICT</span>
-
                 <h1>
-                    Technologie begrijpen.<br>
+                    Technologie <span class="hero-highlight">begrijpen.</span><br>
                     <span>Ideeën realiseren.</span>
                 </h1>
 
                 <p class="hero-description">
-                    Ik wil technologie begrijpen én gebruiken om oplossingen
-                    te bouwen. Daarom koos ik voor HBO-ICT bij HZ.
+                    Ik wil technologie begrijpen en oplossingen bouwen. Daarom koos ik voor HBO-ICT bij HZ.
                 </p>
 
                 <a class="hero-link" href="#motivatie">
@@ -45,24 +52,20 @@
             <div class="container">
                 <div class="section-heading">
                     <span class="section-label">01 / Motivatie</span>
-                    <h2>Waarom ik voor ICT heb gekozen</h2>
+                    <h2>Waarom ik voor ICT koos</h2>
                 </div>
 
                 <div class="prose">
                     <p class="lead">
-                        ICT combineert logisch denken, creativiteit en
-                        problemen oplossen.
+                        Ik ben benieuwd hoe technologie de wereld verandert.
                     </p>
 
                     <p>
-                        Ik onderzoek graag hoe software werkt en hoe
-                        technologie processen kan verbeteren.
+                        Vroeger gebeurde veel analoog, nu gebruiken we steeds meer digitale technologie. Ook AI speelt een steeds grotere rol. Ik wil begrijpen hoe die ontwikkelingen werken en zelf nuttige toepassingen bouwen.
                     </p>
 
                     <p>
-                        Bij MBO 4 Software Development leerde ik programmeren,
-                        problemen analyseren en gebruiksvriendelijke
-                        oplossingen ontwerpen.
+                        Tijdens MBO 4 Software Development aan Scalda ontdekte ik dat ik graag ideeën omzet in werkende software. Daarom wil ik me verder ontwikkelen in ICT.
                     </p>
                 </div>
             </div>
@@ -76,12 +79,11 @@
                 </div>
 
                 <p class="hz-intro">
-                    HBO-ICT bij HZ is voor mij de volgende stap. Ik wil mijn
-                    kennis verdiepen en mij voorbereiden op een carrière in IT.
+                    HBO-ICT bij HZ verdiept mijn kennis en bereidt me voor op een carrière in IT.
                 </p>
 
                 <p class="hz-intro">
-                    ?
+                    HZ ligt dichtbij en sluit aan op mijn mbo-opleiding. Ik leer door te doen, dus projecten voor echte organisaties passen bij mij. Na het brede eerste jaar wil ik in jaar 2 voor Software Engineering kiezen.
                 </p>
 
                 <div class="principles">
@@ -89,8 +91,7 @@
                         <span class="principle-number">01</span>
                         <h3>Technische verdieping</h3>
                         <p>
-                            Mijn programmeerkennis verdiepen en grotere
-                            systemen leren ontwerpen.
+                            Programmeren verdiepen en grotere systemen ontwerpen.
                         </p>
                     </article>
 
@@ -98,7 +99,7 @@
                         <span class="principle-number">02</span>
                         <h3>Praktisch leren</h3>
                         <p>
-                            Samenwerken en oplossingen testen en verbeteren.
+                            Samenwerken, testen en verbeteren.
                         </p>
                     </article>
 
@@ -106,9 +107,34 @@
                         <span class="principle-number">03</span>
                         <h3>Professionele groei</h3>
                         <p>
-                            Zelfstandig werken en verantwoordelijkheid
-                            nemen voor mijn werk.
+                            Zelfstandig werken en verantwoordelijkheid nemen.
                         </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="toekomst-heading">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">03 / Toekomst</span>
+                    <h2 id="toekomst-heading">Mijn langetermijnperspectief</h2>
+                </div>
+                <div class="principles">
+                    <article class="principle-card">
+                        <span class="principle-number">1–2</span>
+                        <h3>Jaar 1–2: basis en keuze</h3>
+                        <p>Ik wil mijn propedeuse halen, TypeScript en Python verdiepen en mijn trackkeuze onderbouwen.</p>
+                    </article>
+                    <article class="principle-card">
+                        <span class="principle-number">3–4</span>
+                        <h3>Jaar 3–4: praktijk</h3>
+                        <p>Ik wil via een minor en stage praktijkervaring opdoen en afstuderen met een softwareproject waarin ik LLM(Large Language Model) toepas.</p>
+                    </article>
+                    <article class="principle-card">
+                        <span class="principle-number">5+</span>
+                        <h3>Na mijn studie</h3>
+                        <p>Ik wil starten als software developer en doorgroeien naar een rol in backend of AI.</p>
                     </article>
                 </div>
             </div>
